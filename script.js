@@ -1,5 +1,5 @@
 const passwordbox = document.getElementById('password')
-const lenght = 12;
+const lenght = 20;
 
 const upperCase="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowerCase ='abcdefghijklmnopqrstuvwxyz';
@@ -20,3 +20,8 @@ function createPassword(){
     }
     passwordbox.value=password;
 }
+
+function copyPassword(){
+    navigator.clipboard.writeText(passwordbox.value);
+}
+

@@ -10,10 +10,11 @@
     <div class="container">
         <h1>Generate a <br><span>Random Password</span></h1>
         <div class="display">
-            <input type="text" name="text" id="password" placeholder="Password">
-            <img src="images/copy.png" alt="">
+            <input type="text" name="text" id="password" placeholder="Password" readonly>
+            <img src="images/copy.png" alt="" onclick="copyPassword()">
         </div>
         <button onclick="createPassword()"><img src="images/lightning.webp" alt="">Generate Password</button>
+        <div class="alert"><p class="text-alert">H1</p></div>
     </div>
     <script src="script.js"></script>
 </body>
