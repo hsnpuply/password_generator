@@ -88,40 +88,31 @@ body{
 }
 
 .alert{
-    max-width: 295px;
-    padding: 16px;
+    min-width: 495px;
+    max-width: 90%;
+    padding: 18px;
     background: #019f55;
     text-align: center;
     border-radius: 7px;
     box-shadow: -1px -2px 5px #000;
     position: fixed;
-    bottom: 3.5%;
-    right: 50%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
     opacity: 0;
-    animation: alert_Text 4s infinite;
+    transition: all 2.4s ease-out;
+    font-size: 30px;
 
 }
-.animation{
-    animation: alert_Text 4s infinite;
 
-}
 .text-alert{
     font-family: 'Roboto', sans-serif;
-    font-size: 30px;
     font-weight: 400;
+    text-shadow: 5px 2px 5px #000;
+    letter-spacing: .3rem;
 }
 
-
-@keyframes alert_Text {
-    0%{
-        opacity: .2;
-    }
-    20%{
-        opacity: .8;
-    }
-
-
-   70%{
-        opacity: 1;
-    }
+.rangeValue{
+    font-size: 32px;
+    color: rebeccapurple;
 }

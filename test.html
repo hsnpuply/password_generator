@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Range Example</title>
+</head>
+<body>
+
+    <input type="range" min="0" max="100" value="50" step="10" id="rangeInput">
+    <p id="rangeValue"></p>
+    <script>
+document.getElementById('rangeInput').addEventListener('input', function() {
+ document.getElementById('rangeValue').innerHTML = this.value;
+});
+    </script>
+
+</body>
+</html>

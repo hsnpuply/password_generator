@@ -13,8 +13,12 @@
             <input type="text" name="text" id="password" placeholder="Password" readonly>
             <img src="images/copy.png" alt="" onclick="copyPassword()">
         </div>
+        <input type="range" min="8" max="25" value="8"  name="range" id="range">
+        <p id="rangeValue"></p>
+
         <button onclick="createPassword()"><img src="images/lightning.webp" alt="">Generate Password</button>
-        <div class="alert"><p class="text-alert">H1</p></div>
+        <div class="alert"><p class="text-alert">Copied !</p></div>
+
     </div>
     <script src="script.js"></script>
 </body>
