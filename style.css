@@ -112,7 +112,40 @@ body{
     letter-spacing: .3rem;
 }
 
-.rangeValue{
-    font-size: 32px;
-    color: rebeccapurple;
+#rangeValue{
+    font-size: 52px;
+    color: #019f55;
+    text-align: center;
+    text-shadow: 2px 2px 5px #000;
+    margin-bottom: 10px;
 }
+
+#range{
+    width: 100%;
+    height: 2rem;
+}
+#range {
+    appearance: none;
+    width: 100%;
+    height: 25px;
+    background: linear-gradient(90deg, rgba(1,159,85,1) 0%, rgba(13,85,19,1) 100%);
+    border-radius: 7px;
+    outline: none;
+    opacity: 0.73;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+
+  #range:hover{
+    opacity: 1;
+  }
+
+  #range::-webkit-slider-thumb {
+    appearance: none;
+    width: 37px; /* Set a specific slider handle width */
+    height: 37px; /* Slider handle height */
+    border-radius: 20px;
+    border: 2px solid #000;
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
